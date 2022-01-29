@@ -1,0 +1,17 @@
+.buildpath
+.settings/
+.project
+*.patch
+.idea/
+.git/
+runtime/
+vendor/
+*.lock
+.phpintel/
+.env
+.phpstorm.meta.php
+.DS_Store
+protected/devtool/
+!composer.lock
+docker-compose.yml
+TestController.php
