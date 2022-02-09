@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eaba89fc60bcd652bd7e36f4a7a79111",
+    "content-hash": "e9bca84dcc7b3aa792b843f2f3fb8e8a",
     "packages": [
         {
             "name": "agarwood-cloud/easy-wechat",
@@ -415,6 +415,72 @@
                 "source": "https://github.com/mingyoung/easywechat-composer/tree/1.4.1"
             },
             "time": "2021-07-05T04:03:22+00:00"
+        },
+        {
+            "name": "godruoyi/php-snowflake",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/godruoyi/php-snowflake.git",
+                "reference": "d8cbe72ed375b45033b7042e3d03340ce4fa479f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/godruoyi/php-snowflake/zipball/d8cbe72ed375b45033b7042e3d03340ce4fa479f",
+                "reference": "d8cbe72ed375b45033b7042e3d03340ce4fa479f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Godruoyi\\Snowflake\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Godruoyi",
+                    "email": "g@godruoyi.com"
+                }
+            ],
+            "description": "An ID Generator for PHP based on Snowflake Algorithm (Twitter announced).",
+            "homepage": "https://github.com/godruoyi/php-snowflake",
+            "keywords": [
+                "Unique ID",
+                "laravel snowflake",
+                "order id",
+                "php snowflake",
+                "php unique id",
+                "snowflake algorithm",
+                "unique order id"
+            ],
+            "support": {
+                "issues": "https://github.com/godruoyi/php-snowflake/issues",
+                "source": "https://github.com/godruoyi/php-snowflake/tree/1.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://images.godruoyi.com/wechat.png",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/godruoyi",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-25T05:56:30+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1210,16 +1276,16 @@
         },
         {
             "name": "overtrue/wechat",
-            "version": "5.15.0",
+            "version": "5.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/w7corp/easywechat.git",
-                "reference": "b2bc13e0211988157edd6bd80d3a7d64ab823784"
+                "reference": "72a7586cfc8f5a08bfd30765a6fac630d8e13387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/w7corp/easywechat/zipball/b2bc13e0211988157edd6bd80d3a7d64ab823784",
-                "reference": "b2bc13e0211988157edd6bd80d3a7d64ab823784",
+                "url": "https://api.github.com/repos/w7corp/easywechat/zipball/72a7586cfc8f5a08bfd30765a6fac630d8e13387",
+                "reference": "72a7586cfc8f5a08bfd30765a6fac630d8e13387",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1268,13 +1334,13 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "EasyWeChat\\": "src/"
-                },
                 "files": [
                     "src/Kernel/Support/Helpers.php",
                     "src/Kernel/Helpers.php"
-                ]
+                ],
+                "psr-4": {
+                    "EasyWeChat\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1296,7 +1362,7 @@
             ],
             "support": {
                 "issues": "https://github.com/w7corp/easywechat/issues",
-                "source": "https://github.com/w7corp/easywechat/tree/5.15.0"
+                "source": "https://github.com/w7corp/easywechat/tree/5.16.0"
             },
             "funding": [
                 {
@@ -1304,7 +1370,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-11T03:25:23+00:00"
+            "time": "2022-02-08T13:30:22+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -2150,12 +2216,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "React\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2314,12 +2380,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Swoft\\Bean\\": "src/"
-                },
                 "files": [
                     "src/Helper/Functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Swoft\\Bean\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2527,12 +2593,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Swoft\\Console\\": "src/"
-                },
                 "files": [
                     "src/Helper/Functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Swoft\\Console\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2581,11 +2647,11 @@
             },
             "type": "library",
             "autoload": {
-                "classmap": [],
+                "files": [],
                 "psr-4": {
                     "Swoft\\Crontab\\": "src/"
                 },
-                "files": []
+                "classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2796,14 +2862,14 @@
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/Swoft.php"
+                "files": [
+                    "src/Helper/Functions.php"
                 ],
                 "psr-4": {
                     "Swoft\\": "src/"
                 },
-                "files": [
-                    "src/Helper/Functions.php"
+                "classmap": [
+                    "src/Swoft.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2855,10 +2921,10 @@
             },
             "type": "library",
             "autoload": {
-                "classmap": [],
                 "psr-4": {
                     "Swoft\\Http\\Message\\": "src/"
-                }
+                },
+                "classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2957,10 +3023,10 @@
             },
             "type": "library",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "Swoft\\I18n\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3165,11 +3231,11 @@
             },
             "type": "library",
             "autoload": {
-                "classmap": [],
+                "files": [],
                 "psr-4": {
                     "Swoft\\Redis\\": "src/"
                 },
-                "files": []
+                "classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3472,12 +3538,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Swoft\\Stdlib\\": "src/"
-                },
                 "files": [
                     "src/Helper/Functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Swoft\\Stdlib\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3570,10 +3636,10 @@
             },
             "type": "library",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "Swoft\\Task\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4362,12 +4428,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -5326,16 +5392,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.2.7",
+            "version": "3.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "deac27056b57e46faf136fae7b449eeaa71661ee"
+                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/deac27056b57e46faf136fae7b449eeaa71661ee",
-                "reference": "deac27056b57e46faf136fae7b449eeaa71661ee",
+                "url": "https://api.github.com/repos/composer/semver/zipball/a951f614bd64dcd26137bc9b7b2637ddcfc57649",
+                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5348,7 +5414,7 @@
                 "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.54",
+                "phpstan/phpstan": "^1.4",
                 "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
@@ -5393,7 +5459,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.2.7"
+                "source": "https://github.com/composer/semver/tree/3.2.9"
             },
             "funding": [
                 {
@@ -5409,7 +5475,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-04T09:57:54+00:00"
+            "time": "2022-02-04T13:58:43+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -5560,16 +5626,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.5.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "333f15e07c866e33e2765e84ba1e0b88e6a3af3b"
+                "reference": "1975e4453eb2726d1f50da0ce7fa91295029a4fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/333f15e07c866e33e2765e84ba1e0b88e6a3af3b",
-                "reference": "333f15e07c866e33e2765e84ba1e0b88e6a3af3b",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/1975e4453eb2726d1f50da0ce7fa91295029a4fa",
+                "reference": "1975e4453eb2726d1f50da0ce7fa91295029a4fa",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5643,7 +5709,7 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
-                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.5.0"
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -5651,7 +5717,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-14T00:29:20+00:00"
+            "time": "2022-02-07T18:02:40+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5683,12 +5749,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "DeepCopy\\": "src/DeepCopy/"
-                },
                 "files": [
                     "src/DeepCopy/deep_copy.php"
-                ]
+                ],
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5782,16 +5848,16 @@
         },
         {
             "name": "phar-io/version",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
-                "reference": "bae7c545bef187884426f042434e561ab1ddb182"
+                "reference": "15a90844ad40f127afd244c0cad228de2a80052a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/version/zipball/bae7c545bef187884426f042434e561ab1ddb182",
-                "reference": "bae7c545bef187884426f042434e561ab1ddb182",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/15a90844ad40f127afd244c0cad228de2a80052a",
+                "reference": "15a90844ad40f127afd244c0cad228de2a80052a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5833,9 +5899,9 @@
             "description": "Library for handling version information and constraints",
             "support": {
                 "issues": "https://github.com/phar-io/version/issues",
-                "source": "https://github.com/phar-io/version/tree/3.1.0"
+                "source": "https://github.com/phar-io/version/tree/3.1.1"
             },
-            "time": "2021-02-23T14:00:09+00:00"
+            "time": "2022-02-07T21:56:48+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
@@ -6562,11 +6628,11 @@
                 }
             },
             "autoload": {
-                "classmap": [
-                    "src/"
-                ],
                 "files": [
                     "src/Framework/Assert/Functions.php"
+                ],
+                "classmap": [
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6609,12 +6675,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "6e213f05f59444f9e6f5a7c438bf130ae74aed32"
+                "reference": "2ec9ad634c459ee60c42d99390be37c8a3c6e8e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6e213f05f59444f9e6f5a7c438bf130ae74aed32",
-                "reference": "6e213f05f59444f9e6f5a7c438bf130ae74aed32",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/2ec9ad634c459ee60c42d99390be37c8a3c6e8e5",
+                "reference": "2ec9ad634c459ee60c42d99390be37c8a3c6e8e5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6766,6 +6832,7 @@
                 "klaviyo/magento2-extension": ">=1,<3",
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "la-haute-societe/tcpdf": "<6.2.22",
+                "laminas/laminas-form": "<2.17.1|>=3,<3.0.2|>=3.1,<3.1.1",
                 "laminas/laminas-http": "<2.14.2",
                 "laravel/framework": "<6.20.42|>=7,<7.30.6|>=8,<8.75",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
@@ -6793,7 +6860,7 @@
                 "mittwald/typo3_forum": "<1.2.1",
                 "modx/revolution": "<2.8",
                 "monolog/monolog": ">=1.8,<1.12",
-                "moodle/moodle": "<3.7.9|>=3.8,<3.8.8|>=3.9,<3.9.5|>=3.10-beta,<3.10.2",
+                "moodle/moodle": "<3.9.11|>=3.10-beta,<3.10.8|>=3.11,<3.11.5",
                 "mustache/mustache": ">=2,<2.14.1",
                 "namshi/jose": "<2.2",
                 "neoan3-apps/template": "<1.1.1",
@@ -6834,7 +6901,7 @@
                 "phpfastcache/phpfastcache": "<6.1.5|>=7,<7.1.2|>=8,<8.0.7",
                 "phpmailer/phpmailer": "<6.5",
                 "phpmussel/phpmussel": ">=1,<1.6",
-                "phpmyadmin/phpmyadmin": "<4.9.6|>=5,<5.0.3",
+                "phpmyadmin/phpmyadmin": "<4.9.8|>=5,<5.0.3|>=5.1,<5.1.2",
                 "phpoffice/phpexcel": "<1.8.2",
                 "phpoffice/phpspreadsheet": "<1.16",
                 "phpseclib/phpseclib": "<2.0.31|>=3,<3.0.7",
@@ -6842,7 +6909,7 @@
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
-                "pimcore/pimcore": "<10.2.9",
+                "pimcore/pimcore": "<=10.2.9",
                 "pocketmine/pocketmine-mp": "<4.0.7",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
@@ -6860,7 +6927,7 @@
                 "pusher/pusher-php-server": "<2.2.1",
                 "pwweb/laravel-core": "<=0.3.6-beta",
                 "rainlab/debugbar-plugin": "<3.1",
-                "remdex/livehelperchat": "<3.92",
+                "remdex/livehelperchat": "<3.93",
                 "rmccue/requests": ">=1.6,<1.8",
                 "robrichards/xmlseclibs": "<3.0.4",
                 "sabberworm/php-css-parser": ">=1,<1.0.1|>=2,<2.0.1|>=3,<3.0.1|>=4,<4.0.1|>=5,<5.0.9|>=5.1,<5.1.3|>=5.2,<5.2.1|>=6,<6.0.2|>=7,<7.0.4|>=8,<8.0.1|>=8.1,<8.1.1|>=8.2,<8.2.1|>=8.3,<8.3.1",
@@ -6872,7 +6939,7 @@
                 "shopware/platform": "<=6.4.6",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<5.7.7",
-                "showdoc/showdoc": "<2.10",
+                "showdoc/showdoc": "<2.10.2",
                 "silverstripe/admin": ">=1,<1.8.1",
                 "silverstripe/assets": ">=1,<1.4.7|>=1.5,<1.5.2",
                 "silverstripe/cms": "<4.3.6|>=4.4,<4.4.4",
@@ -6918,7 +6985,7 @@
                 "symfony/dependency-injection": ">=2,<2.0.17|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
                 "symfony/error-handler": ">=4.4,<4.4.4|>=5,<5.0.4",
                 "symfony/form": ">=2.3,<2.3.35|>=2.4,<2.6.12|>=2.7,<2.7.50|>=2.8,<2.8.49|>=3,<3.4.20|>=4,<4.0.15|>=4.1,<4.1.9|>=4.2,<4.2.1",
-                "symfony/framework-bundle": ">=2,<2.3.18|>=2.4,<2.4.8|>=2.5,<2.5.2|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
+                "symfony/framework-bundle": ">=2,<2.3.18|>=2.4,<2.4.8|>=2.5,<2.5.2|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7|>=5.3.14,<=5.3.14|>=5.4.3,<=5.4.3|>=6.0.3,<=6.0.3|= 6.0.3|= 5.4.3|= 5.3.14",
                 "symfony/http-foundation": ">=2,<2.8.52|>=3,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8|>=4.4,<4.4.7|>=5,<5.0.7",
                 "symfony/http-kernel": ">=2,<2.8.52|>=3,<3.4.35|>=4,<4.2.12|>=4.3,<4.4.13|>=5,<5.1.5|>=5.2,<5.3.12",
                 "symfony/intl": ">=2.7,<2.7.38|>=2.8,<2.8.31|>=3,<3.2.14|>=3.3,<3.3.13",
@@ -6936,7 +7003,7 @@
                 "symfony/security-guard": ">=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
                 "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8|>=5.3,<5.3.2",
                 "symfony/serializer": ">=2,<2.0.11|>=4.1,<4.4.35|>=5,<5.3.12",
-                "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.35|>=5,<5.3.12",
+                "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.35|>=5,<5.3.12|>=5.3.14,<=5.3.14|>=5.4.3,<=5.4.3|>=6.0.3,<=6.0.3",
                 "symfony/translation": ">=2,<2.0.17",
                 "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
                 "symfony/var-exporter": ">=4.2,<4.2.12|>=4.3,<4.3.8",
@@ -6945,6 +7012,7 @@
                 "t3/dce": ">=2.2,<2.6.2",
                 "t3g/svg-sanitizer": "<1.0.3",
                 "tecnickcom/tcpdf": "<6.2.22",
+                "terminal42/contao-tablelookupwizard": ">=1,<3.3.5",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
                 "thelia/thelia": ">=2.1-beta.1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
@@ -7053,7 +7121,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-27T19:11:22+00:00"
+            "time": "2022-02-05T03:12:57+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -8116,6 +8184,55 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+            "name": "swoft/devtool",
+            "version": "v2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swoft-cloud/swoft-devtool.git",
+                "reference": "ad38428d18e9fbbc46348c61e06d1cf2a9c1d82d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swoft-cloud/swoft-devtool/zipball/ad38428d18e9fbbc46348c61e06d1cf2a9c1d82d",
+                "reference": "ad38428d18e9fbbc46348c61e06d1cf2a9c1d82d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "text/template": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swoft\\Devtool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Devtool for swoft framework",
+            "keywords": [
+                "debug",
+                "devtool",
+                "php",
+                "swoft",
+                "swoole"
+            ],
+            "support": {
+                "source": "https://github.com/swoft-cloud/swoft-devtool/tree/v2.0.11"
+            },
+            "time": "2021-05-06T16:36:34+00:00"
+        },
+        {
             "name": "swoft/swoole-ide-helper",
             "version": "dev-master",
             "source": {
@@ -8509,12 +8626,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8596,12 +8713,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -8683,12 +8800,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php81\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -8959,6 +9076,71 @@
                 }
             ],
             "time": "2022-01-02T09:55:41+00:00"
+        },
+        {
+            "name": "text/template",
+            "version": "v2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dermatthes/text-template.git",
+                "reference": "83d7b2b9c1afddebe3f5dc081c3ac2d4fba7c2eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dermatthes/text-template/zipball/83d7b2b9c1afddebe3f5dc081c3ac2d4fba7c2eb",
+                "reference": "83d7b2b9c1afddebe3f5dc081c3ac2d4fba7c2eb",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "nette/tester": "*",
+                "phpunit/phpcov": "^2.0",
+                "satooshi/php-coveralls": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leuffen\\TextTemplate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de"
+                }
+            ],
+            "description": "Simple and secure string-template-engine (Twig-like syntax) with nested if/elseif/else, loops, filters. Simple OOP api: Just one class doing the job (2-lines of code). Fast and secure: No code-generation, no eval'ed() code. Extensible by callbacks. Fully tested. Rich examples included.",
+            "homepage": "http://text-template.pub.leuffen.de",
+            "keywords": [
+                "filter",
+                "for",
+                "if",
+                "loop",
+                "mail",
+                "render",
+                "smarty",
+                "template",
+                "text",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/dermatthes/text-template/issues",
+                "source": "https://github.com/dermatthes/text-template/tree/v2.7.2"
+            },
+            "time": "2021-10-20T20:33:54+00:00"
         },
         {
             "name": "theseer/tokenizer",

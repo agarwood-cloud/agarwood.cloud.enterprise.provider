@@ -8,7 +8,7 @@
     "domain-driven-design"
   ],
   "description": "基于 Swoft 的移动商城",
-  "license": "Apache-2.0",
+  "license": "GPL-3.0",
   "minimum-stability": "stable",
   "require": {
     "php": ">=8.0",
@@ -34,9 +34,11 @@
     "agarwood/core": "dev-master",
     "agarwood/rpc": "dev-master",
     "agarwood-cloud/easy-wechat":"8.0.x-dev",
-    "nesbot/carbon": "^2.56"
+    "nesbot/carbon": "^2.56",
+    "godruoyi/php-snowflake": "^1.1"
   },
   "require-dev": {
+    "swoft/devtool": "~2.0.0",
     "roave/security-advisories": "dev-latest",
     "swoft/swoole-ide-helper": "dev-master",
     "phpunit/phpunit": "^9.5.13",

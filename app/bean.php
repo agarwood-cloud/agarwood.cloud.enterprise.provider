@@ -8,7 +8,7 @@
  * @author   agarwood
  */
 
-use App\Http\Infrastructure\Middleware\GuzzleHeaderMiddleware;
+use Agarwood\Core\Middleware\GuzzleHeaderMiddleware;
 use Swoft\Db\Database;
 use Swoft\Http\Server\HttpServer;
 use Swoft\Http\Server\Middleware\ValidatorMiddleware;
@@ -101,13 +101,7 @@ return [
         // Add global http middleware
         'middlewares'      => [
             GuzzleHeaderMiddleware::class, //Guzzle 支持协程
-            //            \App\Http\Middleware\FavIconMiddleware::class,
             //            \Swoft\Whoops\WhoopsMiddleware::class,
-
-            // 全局开启 jwt-token 验证，分部接口不需要做token 验证
-            //\App\Http\Infrastructure\Middleware\OAuthJWTMiddleware::class,
-
-            // \App\Http\Infrastructure\Middleware\CorsMiddleware::class,
         ],
         'afterMiddlewares' => [
             ValidatorMiddleware::class  //启用验证器
@@ -204,6 +198,26 @@ return [
     //        'port'    => env('CONSUL_PORT', 8500),
     //        'timeout' => env('CONSUL_TIMEOUT', 3),
     //    ],
+
+    // +------------------------------------------------------
+    // |  RPC客户端 配置 ------ oauth.center配置
+    // +------------------------------------------------------
+    'oauth.center'          => [
+        'class'   => ServiceClient::class,
+        'host'    => env('RPC_CLIENT_OAUTH_CENTER_HOST', '127.0.0.1'),
+        'port'    => env('RPC_CLIENT_OAUTH_CENTER_PORT', 18307),
+        'setting' => [
+            'timeout'         => env('RPC_CLIENT_TIMEOUT', 0.5),
+            'connect_timeout' => env('RPC_CLIENT_CONNECT_TIMEOUT', 1.0),
+            'write_timeout'   => env('RPC_CLIENT_WRITE_TIMEOUT', 10),
+            'read_timeout'    => env('RPC_CLIENT_READ_TIMEOUT', 0.5),
+        ],
+        'packet'  => bean('rpcClientPacket')
+    ],
+    'oauth.center.pool'     => [
+        'class'  => ServicePool::class,
+        'client' => bean('oauth.center')
+    ],
 
     // +------------------------------------------------------
     // |  RPC客户端 配置 ------ mall.center配置
