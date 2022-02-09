@@ -27,39 +27,21 @@ class OfficialAccounts extends Model
 {
     /**
      *
-     * @Id()
+     * @Id(incrementing=false)
      * @Column()
      *
      * @var int
      */
-    private $id;
+    private int $id = 0;
 
     /**
      *
      *
-     * @Column()
+     * @Column(name="enterprise_id", prop="enterpriseId")
      *
-     * @var string
+     * @var int
      */
-    private $uuid;
-
-    /**
-     * 公司
-     *
-     * @Column()
-     *
-     * @var string|null
-     */
-    private $company;
-
-    /**
-     * token唯一值
-     *
-     * @Column()
-     *
-     * @var string
-     */
-    private $token;
+    private int $enterpriseId = 0;
 
     /**
      * 账号名称
@@ -68,7 +50,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $account;
+    private string $account = '';
 
     /**
      *
@@ -77,7 +59,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $appId;
+    private string $appId = '';
 
     /**
      *
@@ -86,7 +68,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $secret;
+    private string $secret = '';
 
     /**
      * 消息加解密密钥
@@ -95,7 +77,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $encodingAesKey;
+    private string $encodingAesKey = '';
 
     /**
      *
@@ -104,7 +86,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $createdAt;
+    private string $createdAt = '';
 
     /**
      *
@@ -113,7 +95,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $updatedAt;
+    private string $updatedAt = '';
 
     /**
      *
@@ -122,7 +104,7 @@ class OfficialAccounts extends Model
      *
      * @var string
      */
-    private $deletedAt;
+    private string $deletedAt = '';
 
     /**
      * @return int
@@ -141,51 +123,19 @@ class OfficialAccounts extends Model
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getUuid(): string
+    public function getEnterpriseId(): int
     {
-        return $this->uuid;
+        return $this->enterpriseId;
     }
 
     /**
-     * @param string $uuid
+     * @param int $enterpriseId
      */
-    public function setUuid(string $uuid): void
+    public function setEnterpriseId(int $enterpriseId): void
     {
-        $this->uuid = $uuid;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getCompany(): ?string
-    {
-        return $this->company;
-    }
-
-    /**
-     * @param string|null $company
-     */
-    public function setCompany(?string $company): void
-    {
-        $this->company = $company;
-    }
-
-    /**
-     * @return string
-     */
-    public function getToken(): string
-    {
-        return $this->token;
-    }
-
-    /**
-     * @param string $token
-     */
-    public function setToken(string $token): void
-    {
-        $this->token = $token;
+        $this->enterpriseId = $enterpriseId;
     }
 
     /**
