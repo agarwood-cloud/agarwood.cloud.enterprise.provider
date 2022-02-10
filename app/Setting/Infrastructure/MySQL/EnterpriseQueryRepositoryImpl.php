@@ -30,6 +30,8 @@ class EnterpriseQueryRepositoryImpl implements EnterpriseQueryRepository
             ->select(
                 'id',
                 'company',
+                'address',
+                'telephone',
             )
             ->paginate($filter['page'], $filter['per_page']);
     }
