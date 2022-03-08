@@ -10,20 +10,20 @@
 
 namespace App\Support\Impl;
 
-use App\Support\OfficialAccountQueryParams;
+use App\Support\PlatformIdQueryParams;
 
 /**
  * @\Swoft\Bean\Annotation\Mapping\Bean()
  */
-class OfficialAccountQueryParamsImpl implements OfficialAccountQueryParams
+class PlatformIdQueryParamsImpl implements PlatformIdQueryParams
 {
     /**
      * @return int|null
      */
-    public function getOfficialAccountId(): int|null
+    public function getPlatformId(): int|null
     {
         // bugfix: 前端发整型，但接收的变为字符串
-        $officialAccountId = context()->getRequest()->get('officialAccountId');
-        return is_numeric($officialAccountId) ? (int)$officialAccountId : null;
+        $platformId = context()->getRequest()->get('platformId');
+        return is_numeric($platformId) ? (int)$platformId : null;
     }
 }

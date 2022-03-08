@@ -97,10 +97,21 @@ class ParsingTokenImpl implements ParsingToken
     /**
      * @return int|null
      */
-    public function getOfficialAccountId(): int|null
+    public function getPlatformId(): int|null
     {
         if ($this->getBearer()) {
-            return $this->oauthCenterJWTRpc->getOfficialAccountId($this->getBearer());
+            return $this->oauthCenterJWTRpc->getPlatformId($this->getBearer());
+        }
+        return null;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getEnterpriseId(): int|null
+    {
+        if ($this->getBearer()) {
+            return $this->oauthCenterJWTRpc->getEnterpriseId($this->getBearer());
         }
         return null;
     }

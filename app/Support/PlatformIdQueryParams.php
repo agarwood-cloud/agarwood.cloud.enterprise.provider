@@ -13,10 +13,10 @@ namespace App\Support;
 /**
  * @\Swoft\Bean\Annotation\Mapping\Bean()
  */
-interface OfficialAccountQueryParams
+interface PlatformIdQueryParams
 {
     /**
      * @return int|null
      */
-    public function getOfficialAccountId(): int|null;
+    public function getPlatformId(): int|null;
 }

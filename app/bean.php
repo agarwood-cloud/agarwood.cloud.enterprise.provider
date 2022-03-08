@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 /**
  * This file is part of Agarwood Cloud.
  *
@@ -8,7 +9,6 @@
  * @author   agarwood
  */
 
-use Agarwood\Core\Middleware\GuzzleHeaderMiddleware;
 use Swoft\Db\Database;
 use Swoft\Http\Server\HttpServer;
 use Swoft\Http\Server\Middleware\ValidatorMiddleware;
@@ -26,23 +26,23 @@ return [
     // | 加载 日志 配置文件
     // +------------------------------------------------------
     // 这里都是默认配置，暂时不作修改
-    'lineFormatter'      => [
+    'lineFormatter'        => [
         'format'     => '%datetime% [%level_name%] [%channel%] [%event%] [tid:%tid%] [cid:%cid%] [traceid:%traceid%] [spanid:%spanid%] [parentid:%parentid%] %messages%',
         'dateFormat' => 'Y-m-d H:i:s',
     ],
-    'noticeHandler'      => [
+    'noticeHandler'        => [
         'class'     => FileHandler::class,
         'logFile'   => '@runtime/logs/notice-%d{Y-m-d}.log',  // 2.0.6 支持日志按时间切割
         'formatter' => \bean('lineFormatter'),
         'levels'    => 'error',
     ],
-    'applicationHandler' => [
+    'applicationHandler'   => [
         'class'     => FileHandler::class,
         'logFile'   => '@runtime/logs/error.log',
         'formatter' => \bean('lineFormatter'),
         'levels'    => 'error,warning',
     ],
-    'logger'             => [
+    'logger'               => [
         'flushRequest' => false,
         'enable'       => true,
         'handlers'     => [
@@ -100,7 +100,7 @@ return [
     'httpDispatcher'       => [
         // Add global http middleware
         'middlewares'      => [
-            GuzzleHeaderMiddleware::class, //Guzzle 支持协程
+            // \Agarwood\Core\Middleware\GuzzleHeaderMiddleware::class, //Guzzle 支持协程
             //            \Swoft\Whoops\WhoopsMiddleware::class,
         ],
         'afterMiddlewares' => [
@@ -202,7 +202,7 @@ return [
     // +------------------------------------------------------
     // |  RPC客户端 配置 ------ oauth.center配置
     // +------------------------------------------------------
-    'oauth.center'          => [
+    'oauth.center'         => [
         'class'   => ServiceClient::class,
         'host'    => env('RPC_CLIENT_OAUTH_CENTER_HOST', '127.0.0.1'),
         'port'    => env('RPC_CLIENT_OAUTH_CENTER_PORT', 18307),
@@ -214,7 +214,7 @@ return [
         ],
         'packet'  => bean('rpcClientPacket')
     ],
-    'oauth.center.pool'     => [
+    'oauth.center.pool'    => [
         'class'  => ServicePool::class,
         'client' => bean('oauth.center')
     ],
@@ -362,7 +362,7 @@ return [
     // +------------------------------------------------------
     // |  RPC客户端 配置 ------ market.center配置
     // +------------------------------------------------------
-    'market.center'      => [
+    'market.center'        => [
         'class'   => ServiceClient::class,
         'host'    => env('RPC_CLIENT_MARKET_CENTER_HOST', '127.0.0.1'),
         'port'    => env('RPC_CLIENT_MARKET_CENTER_PORT', 18307),
@@ -374,7 +374,7 @@ return [
         ],
         'packet'  => bean('rpcClientPacket')
     ],
-    'market.center.pool' => [
+    'market.center.pool'   => [
         'class'  => ServicePool::class,
         'client' => bean('market.center')
     ],
