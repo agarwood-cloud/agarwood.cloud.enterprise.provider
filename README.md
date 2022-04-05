@@ -1,6 +1,8 @@
 ### 概述
 
-Core 是 Agarwood 的一部分，是整个项目的核心类库。
+Core is a part of agarwood and the core class library of the whole project.
+
+> [中文说明](./README.zh-CN.md)
 
 
 ### 环境要求

@@ -2,6 +2,8 @@
 
 Core 是 Agarwood 的一部分，是整个项目的核心类库。
 
+> [English](./README.md)
+
 
 ### 环境要求
 
